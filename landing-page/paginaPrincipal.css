@@ -1,0 +1,297 @@
+.banner{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    background-image: url(img/banner.jpg);
+    margin-top: 60px;
+}
+
+.banner p{
+    font-size: 2.5rem;
+}
+
+.fundoBanner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    color: #5d1917;
+    background: linear-gradient(
+90deg, rgba(247,247,250,0) 0%, rgba(237,237,244,0.5) 33%, rgba(253,255,255,1) 100%);
+}
+
+.botoesBanner{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fundoBanner a button{
+    width: 150px;
+    padding: 4%;
+    background-color: transparent;
+    border: 1px solid #5d1917;
+    color: #5d1917;
+    cursor: pointer;
+}
+
+.destaques{
+    height: 35vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 3%;
+}
+
+.categoria{
+    /*width: 20%;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categoria p{
+    margin-top: 2%;
+}
+
+.circulo{
+    width: 100px;
+    border: none;
+    border-radius: 50%;
+    height: 100px;
+    background-size: cover;
+}
+
+.painel{
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 3%;
+    border-radius: 5%;
+}
+
+.fundoCard{
+    border-radius: 4%;
+    height: 100%;
+    padding-left: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    background: linear-gradient(
+90deg, rgba(247,247,250,1) 0%, rgba(237,237,244,1) 35%, rgba(253,255,255,0) 100%);
+}
+
+.fundoCard p{
+    font-size: 3em;
+    color: #5d1917;
+}
+
+.fundoCard button{
+    padding: 8px;
+    width: 100%;
+    background-color: #5D1916;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    border: 1px solid #5d1917;
+}
+.fundoCard button:hover{
+    cursor: pointer;
+}
+
+#catMercado{
+    background-image: url(img/mercado.jpg);
+    background-position-y: -100px;
+}
+
+#FastFood, #congelados{
+    background-image: url(img/fastfood.jpg);
+    background-position-y: -131px;
+}
+
+/*estilopagina 1*/
+
+.destaquesVegetariano, .destaquesBoteco, .destaquesFastFood, .destaquesMercado, .destaquesBebidas, .destaquesLowCarb{
+    display: none;
+}
+.card-produtos{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 15px solid transparent;
+}
+
+.img-card{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.preco{
+    text-align: end;
+
+}
+.veg{
+    color: green;
+}
+
+.botao{
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+
+    background-color: #5D1916;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+}
+.botao:hover{
+    cursor: pointer;
+}
+
+.botaoMais{
+    width: 70%;
+}
+
+/*fim*/
+
+input[type="checkbox"]{
+   display: none;
+}
+
+#catVegano:checked + .destaquesVeganos, #catVegetariano:checked + .destaquesVegetariano, #catMercado:checked + .destaquesMercado, #catBoteco:checked + .destaquesBoteco, #catFastFood:checked + .destaquesFastFood, #catBebidas:checked + .destaqueBebidas, #catLowCarb:checked + destaquesLowCarb{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.destaquesMes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.depoimentos{
+    margin-bottom: 2%;
+}
+
+.cardDepoimentos{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 2%;
+}
+
+.avatar{
+    width: 20%;
+}
+
+.avatar img{
+    width: 100%;
+}
+
+.cardTexto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.textoNome{
+    font-weight: 600;
+}
+
+.estrelas img{
+    width: 1%;
+}
+
+.estrelas p{
+    display: inline-block;
+}
+
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px){
+   
+    .banner{
+       height: 250px; 
+    }
+
+    .banner p{
+        font-size: 1.5rem;
+    }
+
+    .destaques{
+        flex-direction: column;
+    }
+
+    .fundoCard button{
+        width: 100%;
+        font-size: 10px;
+    }
+    .fundoCard p{
+       font-size: 1em;
+    }
+
+    .painel{
+        width: 100%;
+    }
+
+    #catMercado, #congelados{
+       background-position-y: 0; 
+    }
+
+    .destaquesMes{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-produtos{
+        width: 90%;
+        margin-top: 4%;
+    }
+
+    .cardTexto{
+        padding-left: 4%;
+    }
+
+    .avatar{
+        width: 100%;
+    }
+
+    .cardDepoimentos{
+        align-items: flex-end;
+        margin-bottom: 2%;
+    }
+
+    .estrelasMobile{
+        width: 45%;
+        margin-left: 2%;
+    }
+    .textoNome{
+        display: flex;
+    }
+
+    .estrelasMobile img{
+        width: 8%;
+        margin-left: 1%;
+    }
+
+    .esconder{
+        display: none;
+    }
+
+}
