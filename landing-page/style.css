@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #5D1917;
+}
+
+body, header, footer, section, main, div, label{
+   /* border: 1px solid red;*/
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+
+header{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+
+    background-color: rgba(255,255,255,0.8);
+    border-bottom: 2px solid #5D1917;
+    color: #5D1917;
+}
+
+main{
+    margin-top: 3%;
+}
+
+header a{
+    display: flex;
+    align-items: center;;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header img{
+    width: 10%;
+}
+
+.menu{
+    min-width: 50%;
+    font-size: 18px;
+    margin-right: 3%;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu ul a{
+    text-decoration: none;
+    color: black;
+    margin-right: 2%;
+}
+
+.menu ul a li{
+    color: #5D1917;
+}
+
+main{
+    min-height: 100vh;
+    color: #5D1917;
+}
+
+
+footer{
+    text-align: center;
+    flex-grow: 0;
+    background-color: #5D1917;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+footer section{
+    width: 50%;
+}
+
+footer p{
+    padding: 1%;
+    font-weight: 600;
+}
+
+.botaoGeral{
+    padding: 8px;
+    width: 39%;
+    background-color: #5D1916;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    border: 1px solid #5d1917;
+}
+.rede{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 20px;
+    transition: all 0.4s ease-out;
+
+}
+
+.rede:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+
+}
+
+.icone{
+    margin: 0px auto;
+    padding: 35px;
+    width: 40px;
+}
+
+.estrelasMobile{
+    display: none;
+}
+
+@media screen and (min-device-width : 360px) and (max-device-width : 480px){
+    header img{
+        width: 45%;
+    }
+
+    header a{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .menu{
+        margin-right: 10%;
+    }
+    
+    main{
+        margin-top: 3%;
+    }
+
+    .destaqueMes{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer section{
+        width: 100%;
+    }
+
+    .esconder{
+        display: none;
+    }
+
+    .rede{
+        margin: 0;
+        width: 50%;
+    }
+
+}

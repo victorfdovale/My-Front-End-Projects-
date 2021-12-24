@@ -1,0 +1,136 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.sobre-nos{
+    border: none;
+    text-align: center;
+    padding-top: 3%;
+    margin-bottom: 10%;  
+}
+.nosso-time{
+    border-bottom: 300px;
+}
+.descricao{
+    font-size: medium;
+    padding: 1%;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1%;
+    margin-right: 20%;
+    padding: 1%;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+   
+    
+}
+input{
+    width: 600px;
+    padding: 2%;
+    border-color: #5D1719;
+}
+
+input::placeholder{
+    color: #5D1719;
+}
+.fale-conosco{
+    text-align: center;
+}
+.enviar{
+    width: 200%;
+}
+.enviar:hover{
+    cursor: pointer;
+}
+.imagem-e-formulario{
+    display: flex;
+    align-items: center;
+}
+.membros{
+    justify-content: center;
+    display: flex;
+}
+.pessoa1{
+    width: 200px;
+    height: 200px;
+    border-radius: 2cm;
+    
+}
+.pessoa2{
+    
+    width: 200px;
+    height: 200px;
+    border-radius: 2cm;
+}
+.pessoa3{
+    width: 200px;
+    height: 200px;
+    border-radius: 2cm;
+}
+.foto1{
+    text-align: center;
+    margin-right: 50px;
+}
+.foto2{
+    text-align: center;
+    margin-right: 50px;
+}
+.foto3{
+    margin-right: 50px;
+    text-align: center;
+}
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* celulares */
+    main{
+        margin-top: 20%;
+    }
+    .membros{
+        flex-direction: column;
+    }
+
+    .foto1, .foto2, .foto3{
+        margin: 10% 0;
+
+    }
+    .formulario{
+        align-items: center;
+    }
+
+    form{
+        width: 100%;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 2%;
+    }
+
+    form div{
+        width: 90%;
+    }
+    .enviar{
+        width: 50%;
+    }
+
+    .imagem-e-formulario{
+        flex-direction: column;
+    }
+    .imagem-e-formulario img{
+        width: 100%;
+    }
+    input{
+        padding: 2%;
+        width: 95%;
+    }
+}
