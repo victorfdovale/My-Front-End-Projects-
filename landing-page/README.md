@@ -23,7 +23,7 @@ status: finalizado ✔️
 
 ### Como rodar essa aplicação:
 Você pode rodar essa aplicação apenas clicando no link do surge abaixo:
-alike-basketball.surge.sh
+https://motionless-milk.surge.sh/
 
 ### Abaixo seguem alguns prints da aplicação:
 ![image](https://user-images.githubusercontent.com/20729709/139612726-79668037-1c3c-4229-950f-2ff71e02ac3c.png)
