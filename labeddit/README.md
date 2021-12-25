@@ -1,1 +1,1 @@
-https://obtainable-brick.surge.sh/login
+obtainable-brick.surge.sh
