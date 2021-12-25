@@ -1,4 +1,4 @@
-https://gruesome-crack.surge.sh/travels
+https://gruesome-crack.surge.sh
 
 login: vferreiradovale@gmail.com
 senha: 123456
