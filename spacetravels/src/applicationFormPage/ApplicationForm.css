@@ -1,0 +1,8 @@
+.containerInputs{
+    width: 30vw;
+}
+.containerTrips{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+}
